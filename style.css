@@ -42,10 +42,14 @@ h1 {
 
 main {
 	width: 100%;
-	max-width: 40rem;
+	max-width: 30rem;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+}
+
+label {
+	font-size: 0.95rem;
 }
 
 .password_div,
@@ -111,10 +115,11 @@ path {
 	color: var(--green);
 }
 
-.pass_choices div {
+.pass_choice {
 	width: 100%;
 	display: flex;
 	justify-content: flex-start;
+	align-items: center;
 	gap: 1rem;
 }
 p {
@@ -175,6 +180,7 @@ input[type="checkbox"] {
 .pass_strength_bar {
 	width: 25%;
 	border: 2px solid var(--almost-white);
+	min-width: 12px;
 }
 
 button {
@@ -205,7 +211,7 @@ button:hover path {
 	}
 
 	.content_div {
-		padding: 1rem 1.5rem;
+		padding: 1.25rem 1.5rem;
 	}
 
 	.pass_strength {
@@ -230,7 +236,7 @@ button:hover path {
 		max-width: 90vw;
 	}
 	.content_div {
-		padding: 2rem;
+		padding: 1rem 1.25rem;
 	}
 
 	.pass_strength {
@@ -255,5 +261,10 @@ button:hover path {
 
 	.pass_strength_desc {
 		font-size: 0.8rem;
+	}
+
+	button {
+		padding-block: 0.5rem;
+		margin-top: 0.25rem;
 	}
 }
