@@ -1,0 +1,261 @@
+@font-face {
+	font-family: "JetBrains Mono";
+	src: url(./assets/fonts/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+:root {
+	--very-dark-grey: rgb(24, 23, 31);
+	--dark-grey: rgb(36, 35, 44);
+	--grey: rgb(129, 125, 146);
+	--almost-white: rgb(230, 229, 234);
+	--green: rgb(164, 255, 175);
+	--red: rgb(246, 74, 74);
+	--orange: rgb(251, 124, 88);
+	--yellow: rgb(248, 205, 101);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--very-dark-grey);
+	color: var(--almost-white);
+	font-family: "JetBrains Mono", monospace;
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+h3 {
+	color: var(--grey);
+	letter-spacing: 1px;
+}
+
+#wrapper {
+	width: 100%;
+	max-width: 40rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.password_div,
+.content_div,
+.pass_length,
+.pass_length div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.password_div {
+	background-color: var(--dark-grey);
+	padding: 2rem 3rem;
+	font-size: 1.5rem;
+}
+
+.password_div .copy_img,
+path {
+	cursor: pointer;
+	transition: fill 0.2s ease-in-out;
+}
+
+.password_div .copy_img:hover path {
+	fill: var(--almost-white);
+}
+
+.pass_copied {
+	display: flex;
+	gap: 1rem;
+}
+
+.pass_copied_text {
+	display: none;
+	font-size: 1.2rem;
+	color: var(--green);
+}
+
+.content_div {
+	background-color: var(--dark-grey);
+	padding: 2rem 3rem;
+	flex-direction: column;
+}
+
+.content_div > div {
+	width: 100%;
+	justify-content: space-between;
+}
+
+.pass_length {
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pass_length > div {
+	width: 100%;
+	justify-content: space-between;
+}
+
+.length_number {
+	font-size: 2rem;
+	color: var(--green);
+}
+
+.pass_choices div {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+p {
+	margin: 0;
+}
+
+input[type="range"] {
+	width: 100%;
+	accent-color: var(--green);
+	margin-block: 1rem;
+}
+
+input[type="checkbox"] {
+	accent-color: var(--green);
+	aspect-ratio: 1/1;
+	height: 1.25rem;
+}
+
+.pass_strength {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--very-dark-grey);
+	padding: 1.5rem 3rem;
+	margin-block: 1.5rem;
+}
+
+.pass_title {
+	color: var(--grey);
+	letter-spacing: 1px;
+	font-size: 1.1rem;
+	display: flex;
+	align-items: center;
+}
+
+.pass_strength_display {
+	width: 75%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 1rem;
+}
+
+.pass_strength_desc {
+	font-weight: 600;
+	font-size: 1.25rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.pass_strength_bars {
+	height: 100%;
+	width: 25%;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.pass_strength_bar {
+	width: 25%;
+	border: 2px solid var(--almost-white);
+}
+
+.pass_strength_bar {
+	background-color: var(--green);
+}
+
+button {
+	font-family: "JetBrains Mono", monospace;
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	width: 100%;
+	padding-block: 1.5rem;
+	border: 2px solid var(--green);
+	background-color: var(--green);
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+	background-color: transparent;
+	color: var(--green);
+}
+
+button:hover path {
+	fill: var(--green);
+}
+
+@media (max-width: 768px) {
+	.password_div {
+		padding: 1rem 1.5rem;
+	}
+
+	.content_div {
+		padding: 1rem 1.5rem;
+	}
+
+	.pass_strength {
+		padding: 1rem 1.5rem;
+	}
+
+	.pass_strength_bars {
+		width: 20%;
+	}
+}
+
+@media (max-width: 425px) {
+	body {
+		font-size: 1rem;
+	}
+
+	label {
+		font-size: 0.95rem;
+	}
+
+	#wrapper {
+		max-width: 90vw;
+	}
+	.content_div {
+		padding: 2rem;
+	}
+
+	.pass_strength {
+		width: 100%;
+		margin-block: 0.5rem;
+	}
+
+	.pass_title {
+		font-size: 0.75rem;
+	}
+
+	.pass_strength_display {
+		width: 50%;
+		gap: 0.5rem;
+	}
+
+	.pass_strength_bars {
+		width: 25%;
+		min-width: 50px;
+		gap: 0.25rem;
+	}
+
+	.pass_strength_desc {
+		font-size: 0.8rem;
+	}
+}
