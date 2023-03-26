@@ -22,12 +22,15 @@ The solution was built using HTML, CSS and JavaScript.
 
 ## Screenshots
 Screen:
+
 ![Screen](/assets/screenshots/screen.png)
 
 Tablet:
+
 ![Tablet](/assets/screenshots/tablet.png)
 
 Mobile:
+
 ![Mobile](/assets/screenshots/mobile.png)
 
 ## Links
