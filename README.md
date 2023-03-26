@@ -20,12 +20,14 @@ Users should be able to:
 
 The solution was built using HTML, CSS and JavaScript.
 
-## Screenshot
-
+## Screenshots
+Screen:
 ![Screen](/assets/screenshots/screen.png)
 
+Tablet:
 ![Tablet](/assets/screenshots/tablet.png)
 
+Mobile:
 ![Mobile](/assets/screenshots/mobile.png)
 
 ## Links
