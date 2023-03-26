@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en_US">
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -9,8 +9,8 @@
 		<title>Password Generator</title>
 	</head>
 	<body>
-		<h3>Password Generator</h3>
-		<div id="wrapper">
+		<h1>Password Generator</h1>
+		<main>
 			<div class="password_div">
 				<div class="password">&nbsp;</div>
 				<div class="pass_copied" title="Copy password">
@@ -27,21 +27,21 @@
 				<div class="pass_length">
 					<div>
 						<p>Character Length</p>
-						<p class="length_number">16</p>
+						<p class="length_number">&nbsp;</p>
 					</div>
-					<input type="range" name="password_length" id="password_length" min="5" max="20" step="1" value="16" />
+					<input type="range" name="password_length" id="password_length" min="5" max="20" step="1" value="5" aria-label="Character length" />
 				</div>
 				<div class="pass_choices">
 					<div class="pass_choice">
-						<input type="checkbox" name="uppercase" id="uppercase" checked />
+						<input type="checkbox" name="uppercase" id="uppercase" />
 						<label for="uppercase">Include uppercase letters</label>
 					</div>
 					<div class="pass_choice">
-						<input type="checkbox" name="lowercase" id="lowercase" checked />
+						<input type="checkbox" name="lowercase" id="lowercase" />
 						<label for="lowercase">Include lowercase letters</label>
 					</div>
 					<div class="pass_choice">
-						<input type="checkbox" name="numbers" id="numbers" checked />
+						<input type="checkbox" name="numbers" id="numbers" />
 						<label for="numbers">Include numbers</label>
 					</div>
 					<div class="pass_choice">
@@ -52,7 +52,7 @@
 				<div class="pass_strength">
 					<div class="pass_title">STRENGTH</div>
 					<div class="pass_strength_display">
-						<div class="pass_strength_desc">Strong</div>
+						<div class="pass_strength_desc">&nbsp;</div>
 						<div class="pass_strength_bars">
 							<div class="pass_strength_bar" id="1"></div>
 							<div class="pass_strength_bar" id="2"></div>
@@ -67,6 +67,6 @@
 					</button>
 				</div>
 			</div>
-		</div>
+		</main>
 	</body>
 </html>

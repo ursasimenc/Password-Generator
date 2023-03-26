@@ -31,14 +31,16 @@ body {
 	align-items: center;
 	height: 100vh;
 	overflow: hidden;
+	gap: 2.5rem;
 }
 
-h3 {
+h1 {
+	font-size: 1.5rem;
 	color: var(--grey);
 	letter-spacing: 1px;
 }
 
-#wrapper {
+main {
 	width: 100%;
 	max-width: 40rem;
 	display: flex;
@@ -175,10 +177,6 @@ input[type="checkbox"] {
 	border: 2px solid var(--almost-white);
 }
 
-.pass_strength_bar {
-	background-color: var(--green);
-}
-
 button {
 	font-family: "JetBrains Mono", monospace;
 	font-size: 1.2rem;
@@ -228,7 +226,7 @@ button:hover path {
 		font-size: 0.95rem;
 	}
 
-	#wrapper {
+	main {
 		max-width: 90vw;
 	}
 	.content_div {
