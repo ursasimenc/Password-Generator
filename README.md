@@ -22,11 +22,11 @@ The solution was built using HTML, CSS and JavaScript.
 
 ## Screenshot
 
-[Screen](/assets/screenshots/screen.png)
+![Screen](/assets/screenshots/screen.png)
 
-[Tablet](/assets/screenshots/tablet.png)
+![Tablet](/assets/screenshots/tablet.png)
 
-[Mobile](/assets/screenshots/mobile.png)
+![Mobile](/assets/screenshots/mobile.png)
 
 ## Links
 
